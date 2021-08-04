@@ -1,0 +1,26 @@
+"--------------------------------------------------------
+"week-minded.vim layout
+"~/.vim/
+"   ftdetect/week-minded.vim " autodetect file-type based on folder path
+"   ftplugin/week-minded.vim " plugin helper functions
+"   syntax/week-minded.vim   " syntax highlighting
+"
+"   doc/week-minded.vim      " setup documentation here
+"   autoload/week-minded.vim " optimize loading here
+"   after/week-minded.vim    " add MarkDown syntax highlighting here
+"   indent/week-minded.vim   " setup indentation rules here
+"   plugin/week-minded.vim   " run on startup, hot key to load todo buffer 
+"
+"TODO 
+" X figure out vim plug-in setup
+" X helper functions for new task, close out task
+" X setup auto ft detection
+" X helper function to convert todo list to email list
+"   break out variables for folder path, new task, ??
+"   hot key to load latest tasklist
+"   generate new day template
+"   generate new week template
+"   add-in markdown text after loading plug-in
+"
+"--------------------------------------------------------
+
