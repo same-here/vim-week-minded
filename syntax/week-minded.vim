@@ -8,15 +8,22 @@ endif
 endif
 
 syn match wmList '^\*\s\w*:'
+syn match wmList '\t\*\s\w*'
 syn match wmListItem '_:\S*'
 syn match wmListItemPend '?:\S*'
 syn match wmListItemDone 'X:\S*'
 
 syn match wmComment ' --.*'
-syn match wmImportant '^!\s.*'
 "syn match wmImportant '^ - \[!\]\s.*'
-syn match wmImportant '\t!\s.*'
+syn match wmImportant '^!\s\w*'
+syn match wmImportant '\t!\s\w*'
 syn match wmImportant '^\s\+- \[!\]\s.*'
+syn match wmWaiting '^?\s\w*'
+syn match wmWaiting '\t?\s\w*'
+syn match wmWaiting '^\s\+- \[?\]\s.*'
+syn match wmHighlight '^-\s\w*'
+syn match wmHighlight '\t-\s\w*'
+syn match wmHighlight '^\s\+- \[-\]\s.*'
 
 syn match wmDone '^X\s.*'
 syn match wmDone '\tX\s.*'
@@ -37,11 +44,11 @@ syn match wmType 'Type'
 syn match wmPreProc 'PreProc'
 syn match wmConstant 'Constant'
 
-hi def link wmTodo        Todo
-hi def link wmComment     Comment
-hi def link wmStatement    Statement
-hi def link wmType         Type
-hi def link wmPreProc        PreProc
+hi def link wmTodo       Todo
+hi def link wmComment    Comment
+hi def link wmStatement  Statement
+hi def link wmType       Type
+hi def link wmPreProc    PreProc
 hi def link wmConstant   Constant
 
 hi def link wmDate      Statement
@@ -49,6 +56,8 @@ hi def link wmDay       Type
 hi def link wmDone      Comment
 hi def link wmImportant PreProc
 hi def link wmComment   Comment
+hi def link wmWaiting   Type
+hi def link wmHighlight Statement
 
 hi def link wmList   Constant
 "hi def link wmListItem  Statement  "commented out to keep white text
