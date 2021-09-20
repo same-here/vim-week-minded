@@ -15,6 +15,7 @@ syn match wmListItemDone 'X:\S*'
 
 syn match wmComment ' --.*'
 "syn match wmImportant '^ - \[!\]\s.*'
+" add different colors for better organization
 syn match wmImportant '^!\s\w*'
 syn match wmImportant '\t!\s\w*'
 syn match wmImportant '^\s\+- \[!\]\s.*'
